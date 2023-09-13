@@ -1,0 +1,113 @@
+ :root {
+    --blue: #054671;
+    --beige: #e5e1da;
+    --brown: #916226;
+    --darkyellow: #e1c776;
+    --yellow: #f8f0b7;
+    --black: #000a1d;
+    --white: #FFFFFF;
+    --grey: #CCCCCC;
+ }
+ @font-face{
+    font-family: 'Co Headline Bold';
+    src: url('../assets/fonts/Co\ Headline\ Bold.otf');
+ }
+ @font-face{
+    font-family: 'Co Headline Light';
+    src: url('../assets/fonts/Co\ Headline\ Light.otf');
+ }
+ @font-face{
+    font-family: 'Co Headline';
+    src: url('../assets/fonts/Co\ Headline.otf');
+ }
+ @font-face{
+    font-family: 'Co Text Bold';
+    src: url('../assets/fonts//Co\ Text\ Bold.otf');
+ }
+ @font-face{
+    font-family: 'Co Text Light';
+    src: url('../assets/fonts/Co\ Text\ Light.otf');
+ }
+ @font-face{
+    font-family: 'Co Text';
+    src: url('../assets/fonts/Co\ Text.otf');
+ }
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 100px;
+  z-index: 1000;
+}
+header .logo {
+  width: 200px;
+  height: auto;
+}
+main{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    color: var(--white);
+    font-family: 'Co Headline Light';
+    font-size: 600%;
+    margin: 20px;
+}
+main a {
+    text-decoration: none;
+    text-align: center;
+}
+.button{
+    font-family: 'Co Text Bold';
+    text-transform: uppercase;
+    margin: 20px;
+    padding: 15px 60px;
+    border: solid 3px var(--blue);
+    border-radius: 20px;
+    color: var(--blue);
+}
+.button:hover{
+    color: var(--white);
+    background-color: var(--blue);
+
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    z-index: 50;
+}
+footer a{
+    text-decoration: none;
+}
+.social-icon{
+    width: 50px;
+    height: 50px;
+}
