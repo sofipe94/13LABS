@@ -92,11 +92,67 @@ main a {
     border: solid 3px var(--blue);
     border-radius: 20px;
     color: var(--blue);
+    background-color: transparent;
 }
 .button:hover{
     color: var(--white);
     background-color: var(--blue);
-
+}
+.form {
+    background-color: var(--beige);
+    font-family: 'Co Text';
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    right: -90%;
+    transform: translate(-50%, -50%) scale(0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0 ,0.2);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-form{
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    z-index: 2000;
+}
+.form_fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.form_div{
+    display: flex;
+    flex-direction: column;
+}
+.form_label{
+    color: var(--blue);
+    font-family: 'Co Text';
+    font-size: 100%;
+    margin: 10px;
+}
+.form_input{
+    border: var(--blue) 1.5px solid;
+    border-radius: 10px;
+    background-color: var(--white);
+    height: 40px;
+}
+.form_input_comment{
+    border: var(--blue) 1.5px solid;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+.submit_btn{
+    color: var(--white);
+    border: var(--blue) 1px solid;
+    border-radius: 10px;
+    background-color: var(--blue);
+    padding: 10px 30px;
+    font-family: 'Co Text';
+    margin: 20px;
+    width: fit-content;
 }
 footer{
     position: absolute;

@@ -18,7 +18,24 @@
         </div>
         <div>
             <a href="#" class="button">Contact</a>
-            <a href="#" class="button">Notify me</a>
+            <button class="button" onclick="openFormNotifyMe()">Notify me</button>
+        </div>
+        <div>
+            <form autocomplete="on" action="" method="post" class="form" id="form-notifyme">
+                <fieldset class="form_fieldset">
+                    <div class="form_div">
+                        <label for="Names" class="form_label">Nombre y apellido *</label>
+                        <input name="name-and-surname" type="text" id="Names" class="form_input">
+                        <label for="Email" class="form_label">Correo electrónico *</label>
+                        <input name="email" type="email" id="Email" class="form_input">
+                        <label for="Phone" class="form_label">Telefóno</label>
+                        <input name="phone" type="tel" id="Phone" class="form_input">
+                        <label for="Message" class="form_label">Consulta</label>
+                        <textarea name="message" id="" cols="50" rows="5" id="Message" class="form_input_comment"></textarea>
+                    </div>
+                    <button type="submit" class="submit_btn" onclick="closeFormNotifyMe()">Enviar</button>
+                </fieldset>
+            </form>
         </div>
     </main>
     <footer>
@@ -29,5 +46,16 @@
         </div>
     </footer>
     <video src="./assets/background/background_video.mp4" muted loop autoplay></video>
+
+    <script>
+        let popup = document.getElementById("form-notifyme")
+
+        function openFormNotifyMe () {
+            popup.classList.add("open-form")
+        }
+        function closeFormNotifyMe () {
+            popup.classList.remove("open-form")
+        }
+    </script>
 </body>
 </html>
