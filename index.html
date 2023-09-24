@@ -24,6 +24,7 @@
             <form autocomplete="on" action="" method="post" class="form" id="form-notifyme">
                 <fieldset class="form_fieldset">
                     <div class="form_div">
+                        <button type="button" class="btn_close" onclick="closeFormNotifyMe()">X</button>
                         <label for="Names" class="form_label">Nombre y apellido *</label>
                         <input name="name-and-surname" type="text" id="Names" class="form_input">
                         <label for="Email" class="form_label">Correo electrónico *</label>
@@ -40,12 +41,12 @@
     </main>
     <footer>
         <div>
-            <a href="https://www.instagram.com/3ce.lab/?igshid=MWZjMTM2ODFkZg%3D%3D" target="_blank"><img src="./assets/icons/instagram-white.svg" alt="instagram link" class="social-icon"></a>
-            <a href="https://www.facebook.com/people/13-Labs/61551468350872/" target="_blank"><img src="./assets/icons/facebook-white.svg" alt="facebook link" class="social-icon"></a>
-            <a href="#" target="_blank"><img src="./assets/icons/linkedin-white.svg" alt="linkedin link" class="social-icon"></a>
+            <a href="https://www.instagram.com/3ce.lab/?igshid=MWZjMTM2ODFkZg%3D%3D" target="_blank"><img src="./assets/icons/instagram-white.png" alt="instagram link" class="social-icon"></a>
+            <a href="https://www.facebook.com/people/13-Labs/61551468350872/" target="_blank"><img src="./assets/icons/facebook-white.png" alt="facebook link" class="social-icon"></a>
+            <a href="#" target="_blank"><img src="./assets/icons/linkedin-white.png" alt="linkedin link" class="social-icon"></a>
         </div>
     </footer>
-    <video src="./assets/background/background_video.mp4" muted loop autoplay></video>
+    <video src="./assets/background/background_video.mp4" muted autoplay id="backgroundVideo"></video>
 
     <script>
         let popup = document.getElementById("form-notifyme")
@@ -56,6 +57,9 @@
         function closeFormNotifyMe () {
             popup.classList.remove("open-form")
         }
+
+        let vid = document.getElementById("backgroundVideo");
+        vid.loop = true;
     </script>
 </body>
 </html>

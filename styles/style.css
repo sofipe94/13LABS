@@ -109,11 +109,12 @@ main a {
     box-shadow: 2px 2px 5px rgba(0, 0, 0 ,0.2);
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
+    z-index: 10000;
 }
 .open-form{
     transform: translate(-50%, -50%) scale(1);
     visibility: visible;
-    z-index: 2000;
+    z-index: 10000;
 }
 .form_fieldset{
     border: none;
@@ -154,6 +155,15 @@ main a {
     margin: 20px;
     width: fit-content;
 }
+.btn_close{
+    color: var(--blue);
+    background-color: transparent;
+    border: transparent;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-size: 120%;
+}
 footer{
     position: absolute;
     bottom: 0;
@@ -164,6 +174,132 @@ footer a{
     text-decoration: none;
 }
 .social-icon{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+}
+
+
+@media (max-width: 1200px) {
+    header {
+        padding: 30px 30px;
+      }
+    header .logo {
+        width: 150px;
+        height: auto;
+      }
+      main{
+          left: 25%;
+          top: 50%;
+      }
+      .title{
+          font-size: 380%;
+      }
+      .button{
+          font-size: 75%;
+          padding: 15px 15px;
+          margin: 5px;
+      }
+      .form {
+          position: absolute;
+          top: 10%;
+          right: -50%;          
+      }
+      .form_fieldset{
+          padding: 10px;
+          width: 50%;
+      }
+      .form_label{
+          font-size: 80%;
+          margin: 5px;
+      }
+      .form_input{
+          height: 20px;
+          width: 280px;
+      }
+      .form_input_comment{
+          border: var(--blue) 1.5px solid;
+          border-radius: 10px;
+          background-color: var(--white);
+          width: 280px;
+      }
+      .submit_btn{
+          padding: 5px 20px;
+          margin: 10px;
+      }
+      .btn_close{
+          font-size: 100%;
+          margin: 10px 20px;
+      }
+      footer{
+          left: 41%;
+      }
+      .social-icon{
+          width: 40px;
+          height: 40px;
+          margin: 15px 5px;
+      }
+}
+@media (max-width: 768px) {
+    header {
+        padding: 30px 30px;
+      }
+    header .logo {
+        width: 100px;
+        height: auto;
+      }
+      main{
+          left: 10%;
+          top: 50%;
+      }
+      .title{
+          color: var(--white);
+          font-family: 'Co Headline Light';
+          font-size: 250%;
+          text-align: center;
+      }
+      .button{
+          font-size: 75%;
+          padding: 15px 15px;
+          margin: 5px;
+      }
+      .form {
+          position: absolute;
+          top: 10%;
+          right: -50%;          
+      }
+      .form_fieldset{
+          padding: 10px;
+          width: 50%;
+      }
+      .form_label{
+          font-size: 80%;
+          margin: 5px;
+      }
+      .form_input{
+          height: 20px;
+          width: 280px;
+      }
+      .form_input_comment{
+          border: var(--blue) 1.5px solid;
+          border-radius: 10px;
+          background-color: var(--white);
+          width: 280px;
+      }
+      .submit_btn{
+          padding: 5px 20px;
+          margin: 10px;
+      }
+      .btn_close{
+          font-size: 100%;
+          margin: 10px 20px;
+      }
+      footer{
+          left: 35%;
+      }
+      .social-icon{
+          width: 30px;
+          height: 30px;
+          margin: 15px 5px;
+      }
 }
