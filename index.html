@@ -46,7 +46,7 @@
             <a href="#" target="_blank"><img src="./assets/icons/linkedin-white.png" alt="linkedin link" class="social-icon"></a>
         </div>
     </footer>
-    <video src="./assets/background/background_video.mp4" muted autoplay id="backgroundVideo"></video>
+    <video src="./assets/background/background_video.mp4" muted autoplay loop></video>
 
     <script>
         let popup = document.getElementById("form-notifyme")
@@ -57,9 +57,6 @@
         function closeFormNotifyMe () {
             popup.classList.remove("open-form")
         }
-
-        let vid = document.getElementById("backgroundVideo");
-        vid.loop = true;
     </script>
 </body>
 </html>
